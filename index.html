@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ITEX for Beauty Businesses in Florida</title>
+  <title>ITEX for Wellness Businesses in Florida</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <style>
     * {
@@ -113,22 +113,44 @@
       text-align: center;
     }
 
-    .info ul {
-      list-style: none;
-      padding: 0;
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
     }
 
-    .info ul li {
-      background: #fef0f2;
-      margin: 12px 0;
-      padding: 14px 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    .benefit-card {
+      background: #fff7f8;
+      border: 1px solid #f3cbd1;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: #cc7c94;
+      margin-bottom: 12px;
+    }
+
+    .benefit-card p {
+      font-size: 15px;
+      color: #444;
+      margin: 0;
     }
 
     .info p {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
       font-size: 17px;
     }
 
@@ -154,13 +176,13 @@
 <body>
 
   <header>
-    <img src="https://your-logo-url.com/logo.png" alt="ITEX Florida Beauty">
+    <img src="https://your-logo-url.com/logo.png" alt="ITEX Florida Wellness">
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Grow Your Beauty Business Without Spending Cash</h1>
-      <p>Join Florida’s premier barter network for massage spas, nail salons, and beauty businesses. Get new clients, book slow days, and trade for what you need.</p>
+      <h1>Grow Your Wellness Business Without Spending Cash</h1>
+      <p>Join Florida’s premier barter network for massage spas, nail salons, skincare studios, and wellness businesses. Get new clients, book slow days, and trade for what you need.</p>
       <a class="cta-button" href="https://calendly.com/yourbookinglink">Claim Your Free Strategy Call</a>
     </div>
   </section>
@@ -172,22 +194,40 @@
   </section>
 
   <section class="info">
-    <h2>What Can ITEX Do For You?</h2>
-    <ul>
-      <li>Fill last-minute slots with paying clients using ITEX dollars</li>
-      <li>Offer gift cards to pre-screened local members</li>
-      <li>Trade for essentials like printing, equipment, web design & more</li>
-      <li>Get new, loyal clients without spending a dime in cash</li>
-      <li>Access 800+ members in Florida and 24,000+ nationwide</li>
-    </ul>
-    <p>There’s no cost to register. Try ITEX risk-free and see how beauty businesses like yours are thriving.</p>
+    <h2>💖 What Can ITEX Do For You?</h2>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>📅 Fill Empty Appointments</h3>
+        <p>Turn your slow days into full books using ITEX dollars instead of cash.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>🎁 Offer Gift Cards</h3>
+        <p>Promote gift cards and specials to loyal, pre-qualified members.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>🔧 Trade for Essentials</h3>
+        <p>Use your ITEX dollars for web design, printing, repairs, and business needs.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>💵 Save Real Money</h3>
+        <p>Get what you need while keeping more cash in your business bank account.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>🌎 Tap Into Our Network</h3>
+        <p>Access 800+ Florida members and 24,000+ across North America.</p>
+      </div>
+    </div>
+
+    <p>💅 There’s no cost to register. Join risk-free and discover how Florida wellness pros are thriving with ITEX.</p>
+
     <div style="text-align:center; margin-top:30px;">
-      <a class="cta-button" href="https://calendly.com/yourbookinglink">Let’s Talk – No Pressure</a>
+      <a class="cta-button" href="https://calendly.com/yourbookinglink">Let's Talk – No Pressure</a>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 ITEX Florida Beauty Network · Empowering Local Wellness Businesses
+    &copy; 2025 ITEX Florida Wellness Network · Empowering Local Wellness Businesses
   </footer>
 
 </body>
