@@ -3,124 +3,192 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grow Your Beauty Business with ITEX</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <title>ITEX for Beauty Businesses in Florida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
       color: #333;
     }
+
     header {
       background: white;
-      padding: 20px 40px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px 0;
     }
+
     header img {
-      max-height: 70px;
+      max-height: 80px;
     }
+
     .hero {
-      background: #d2e1e9;
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1556228453-bf58b0f748b2?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px 80px;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: #f7c7c9;
+      color: #333;
+      padding: 14px 30px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e8b2b5;
+    }
+
+    .video-section {
+      background: #fff;
       padding: 60px 20px;
       text-align: center;
     }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
+
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
-      overflow: hidden;
       max-width: 800px;
-      margin: 30px auto;
+      margin: auto;
+      overflow: hidden;
     }
+
     .video-container iframe {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 0; left: 0;
       width: 100%;
       height: 100%;
     }
-    .cta {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .cta a {
-      background-color: #2d6772;
-      color: white;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-    }
+
     .info {
+      padding: 60px 20px;
       max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      margin: auto;
+      line-height: 1.7;
     }
+
     .info h2 {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 20px;
       font-family: 'Playfair Display', serif;
-    }
-    footer {
-      background: #2d6772;
-      color: white;
+      color: #d295a7;
       text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+    }
+
+    .info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info ul li {
+      background: #fef0f2;
+      margin: 12px 0;
+      padding: 14px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .info p {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #f7c7c9;
+      color: #333;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .info h2 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="https://your-logo-url.com/logo.png" alt="ITEX Florida Beauty">
   </header>
 
   <section class="hero">
-    <h1>Florida’s Beauty Businesses Deserve More</h1>
-    <p>We help massage spas, nail salons, skincare clinics, and beauty professionals in Florida bring in more loyal customers—without spending cash. Join the ITEX Barter Network and grow with purpose.</p>
-    <div class="cta">
-      <a href="https://calendly.com/yourbookinglink">Book Your Free Strategy Call</a>
+    <div class="hero-content">
+      <h1>Grow Your Beauty Business Without Spending Cash</h1>
+      <p>Join Florida’s premier barter network for massage spas, nail salons, and beauty businesses. Get new clients, book slow days, and trade for what you need.</p>
+      <a class="cta-button" href="https://calendly.com/yourbookinglink">Claim Your Free Strategy Call</a>
     </div>
   </section>
 
-  <section class="video-container">
-    <iframe src="https://www.youtube.com/embed/d111ZJBM8Vg" frameborder="0" allowfullscreen></iframe>
+  <section class="video-section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/d111ZJBM8Vg" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
 
   <section class="info">
-    <h2>How ITEX Helps Beauty Professionals</h2>
-    <p><strong>ITEX</strong> is a powerful business-to-business barter platform that lets you get new customers without using cash. You’ll earn ITEX dollars by serving other members, and then spend them on services you already need—like printing, web design, equipment, business retreats, and more.</p>
-
-    <p>Beauty businesses across Florida are using ITEX to:</p>
+    <h2>What Can ITEX Do For You?</h2>
     <ul>
-      <li>Fill slow days with full appointments</li>
-      <li>Offer gift cards or specials to vetted clients</li>
-      <li>Trade for services like accounting, marketing, or equipment repair</li>
-      <li>Reach new customers from our 800+ local members and 24,000+ nationwide</li>
+      <li>Fill last-minute slots with paying clients using ITEX dollars</li>
+      <li>Offer gift cards to pre-screened local members</li>
+      <li>Trade for essentials like printing, equipment, web design & more</li>
+      <li>Get new, loyal clients without spending a dime in cash</li>
+      <li>Access 800+ members in Florida and 24,000+ nationwide</li>
     </ul>
-
-    <p>This is **not** a coupon site or a discount deal. It’s a vetted, trusted barter community built for business owners who want to grow smart.</p>
-
-    <div class="cta">
-      <a href="https://calendly.com/yourbookinglink">Let’s Talk – No Commitment</a>
+    <p>There’s no cost to register. Try ITEX risk-free and see how beauty businesses like yours are thriving.</p>
+    <div style="text-align:center; margin-top:30px;">
+      <a class="cta-button" href="https://calendly.com/yourbookinglink">Let’s Talk – No Pressure</a>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 ITEX Florida Beauty Network · Empowering Local Business Growth
+    &copy; 2025 ITEX Florida Beauty Network · Empowering Local Wellness Businesses
   </footer>
+
 </body>
 </html>
